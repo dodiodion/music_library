@@ -1,6 +1,7 @@
 from lib.database_connection import DatabaseConnection
 from lib.artist_repository import ArtistRepository
 from lib.album_repository import AlbumRepository
+from lib.recipe_repository import RecipeRepository
 
 # Connect to the database
 connection = DatabaseConnection()
@@ -25,3 +26,9 @@ for album in album_repository.all():
     print(album)
 
 print(album_repository.find(2))
+
+recipe_repository = RecipeRepository(connection)
+for recipe in recipe_repository.all():
+    print(recipe)
+
+print(recipe_repository.find(4))

@@ -11,7 +11,7 @@ CREATE TABLE recipes (
 );
 
 -- Finally, we add any records that are needed for the tests to run
-INSERT INTO recipes (recipe_name, cooking_time, rating) VALUES ("pizza", 45, 4);
-INSERT INTO recipes (recipe_name, cooking_time, rating) VALUES ("coxinha", 60, 4);
-INSERT INTO recipes (recipe_name, cooking_time, rating) VALUES ("poutine", 15, 3);
-INSERT INTO recipes (recipe_name, cooking_time, rating) VALUES ("feijoada", 120, 5);
+INSERT INTO recipes (recipe_name, cooking_time, rating) VALUES ('pizza', 45, 4);
+INSERT INTO recipes (recipe_name, cooking_time, rating) VALUES ('coxinha', 60, 4);
+INSERT INTO recipes (recipe_name, cooking_time, rating) VALUES ('poutine', 15, 3);
+INSERT INTO recipes (recipe_name, cooking_time, rating) VALUES ('feijoada', 120, 5);
