@@ -23,3 +23,5 @@ album_repository = AlbumRepository(connection)
 # List them out
 for album in album_repository.all():
     print(album)
+
+print(album_repository.find(2))
