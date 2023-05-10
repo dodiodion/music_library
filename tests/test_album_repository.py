@@ -21,3 +21,9 @@ def test_get_all_albums(db_connection):
             Album (10, 'Here Comes the Sun', 1971, 4),
             Album (11, 'Fodder on My Wings', 1982, 4),
             Album (12, 'Ring Ring', 1973, 2)]
+    
+def test_find_single_album(db_connection):
+    db_connection.seed("seeds/music_library.sql")
+    repository = AlbumRepository(db_connection)
+    album = repository.find(2)
+    assert album == Album(2, 'Surfer Rosa', 1988, 1)
