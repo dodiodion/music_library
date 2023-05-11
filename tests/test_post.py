@@ -1,4 +1,4 @@
-from lib.posts import *
+from lib.post import *
 """
 given a post, verify that it contructs with an id, a title, content, user_account_id and number_of_views
 """
