@@ -56,3 +56,19 @@ INSERT INTO "public"."posts_tags" ("post_id", "tag_id") VALUES
 
 ALTER TABLE "public"."posts_tags" ADD FOREIGN KEY ("tag_id") REFERENCES "public"."tags"("id");
 ALTER TABLE "public"."posts_tags" ADD FOREIGN KEY ("post_id") REFERENCES "public"."posts"("id");
+
+INSERT INTO "public"."tags" ("name") VALUES ('sql');
+
+INSERT INTO "public"."posts_tags" ("post_id", "tag_id") VALUES (7, 5);
+-- SELECT posts.id, posts.title
+-- FROM posts
+--     JOIN posts_tags ON posts_tags.post_id = posts.id
+--     JOIN tags ON posts_tags.tag_id = tags.id
+--     WHERE tags.name = 'travel';
+
+-- SELECT posts.id, posts.title
+-- FROM posts
+--     JOIN posts_tags ON posts_tags.post_id = posts.id
+--     JOIN tags ON tags.id = posts_tags.tag_id
+--     WHERE tags.name = 'sql';
+
