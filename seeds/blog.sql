@@ -1,4 +1,5 @@
-DROP TABLE IF EXISTS blog_posts;
+DROP TABLE IF EXISTS blog_posts CASCADE;
+DROP TABLE IF EXISTS comments CASCADE;
 DROP SEQUENCE IF EXISTS blog_posts_id_seq;
 
 -- Then, we recreate them
@@ -22,3 +23,8 @@ CREATE TABLE comments (
     references blog_posts(id)
     on delete cascade
 );
+
+INSERT INTO blog_posts (title, content) VALUES ('Learn Databases', 'SQL, TablePlus');
+
+INSERT INTO comments (comment_content, author, blog_post_id) VALUES ('Cool', 'Bob', 1);
+INSERT INTO comments (comment_content, author, blog_post_id) VALUES ('Very helpful', 'Vlad', 1);
