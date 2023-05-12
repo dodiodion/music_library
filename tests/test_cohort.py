@@ -14,7 +14,7 @@ We can format cohorts to strings nicely
 """
 def test_cohorts_format_nicely():
     cohort = Cohort(1, "Test Cohort name", "12-05-2021")
-    assert str(cohort) == "Cohort(1, Test Cohort name, 12-05-2021)"
+    assert str(cohort) == "Cohort(1, Test Cohort name, 12-05-2021, [])"
 
 """
 We can compare two identical cohorts

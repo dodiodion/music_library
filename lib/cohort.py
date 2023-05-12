@@ -9,4 +9,4 @@ class Cohort:
         return self.__dict__ == other.__dict__
     
     def __repr__(self):
-        return f"Cohort({self.id}, {self.cohort_name}, {self.starting_date})"
+        return f"Cohort({self.id}, {self.cohort_name}, {self.starting_date}, {self.students})"
